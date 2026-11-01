@@ -1,0 +1,45 @@
+{
+  "version": 2,
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "headers": [
+    {
+      "source": "/(.*)\\.pptx",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/vnd.openxmlformats-officedocument.presentationml.presentation"
+        },
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"Kishor_Kumar_Paroi_10000_Dollar_Executive_Deck.pptx\""
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600, must-revalidate"
+        }
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "src": "/download",
+      "dest": "/Kishor_Kumar_Paroi_10000_Dollar_Executive_Deck.pptx"
+    },
+    {
+      "src": "/deck",
+      "dest": "/Kishor_Kumar_Paroi_10000_Dollar_Executive_Deck.pptx"
+    },
+    {
+      "src": "/pitch",
+      "dest": "/Kishor_Kumar_Paroi_10000_Dollar_Executive_Deck.pptx"
+    },
+    {
+      "handle": "filesystem"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ]
+}
