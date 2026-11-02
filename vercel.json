@@ -12,7 +12,7 @@
         },
         {
           "key": "Content-Disposition",
-          "value": "attachment; filename=\"Kishor_Kumar_Paroi_10000_Dollar_Executive_Deck.pptx\""
+          "value": "inline"
         },
         {
           "key": "Cache-Control",
