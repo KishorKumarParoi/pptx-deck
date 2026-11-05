@@ -1,25 +1,31 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kishor Kumar Paroi — $10,000 Executive Pitch Deck (Widescreen 16:9 · 24 Slides)</title>
-  <meta name="description" content="24-Slide Master Executive AI Systems Architecture Presentation by Kishor Kumar Paroi. Complete 15 project blueprints, full resume, autonomous agent meshes, sub-35ms hybrid RAG, Rust SIMD, and multi-cloud MLOps.">
-  
+  <title>Kishor Kumar Paroi — $10,000 Executive Pitch Deck (Widescreen 16:9)</title>
+  <meta name="description"
+    content="16-Slide Executive AI Systems Architecture Presentation by Kishor Kumar Paroi. Autonomous Agent Meshes, Sub-35ms Hybrid RAG, Rust SIMD, Native Charts, and Multi-Cloud MLOps.">
+
   <!-- Open Graph -->
   <meta property="og:title" content="Kishor Kumar Paroi — $10,000 Executive Pitch Deck">
-  <meta property="og:description" content="24-Slide Executive AI Presentation: All 15 Project Architectures, Executive Resume, $1.4M ARR, Sub-35ms Hybrid RAG, 50x Rust SIMD Acceleration.">
+  <meta property="og:description"
+    content="16-Slide Executive AI Presentation: $1.4M ARR, Sub-35ms Hybrid RAG, 50x Rust SIMD Acceleration, Native PPTX Charts.">
   <meta property="og:image" content="https://pptx.kishor.tech/cover.png">
   <meta property="og:url" content="https://pptx.kishor.tech">
   <meta name="twitter:card" content="summary_large_image">
 
   <!-- Favicon -->
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220%22%3E<text y=%2224%22 font-size=%2224%22>💎</text></svg>">
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220%22%3E<text y=%2224%22 font-size=%2224%22>💎</text></svg>">
 
   <!-- Fonts & Tailwind Play CDN -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap"
+    rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
 
   <script>
@@ -49,34 +55,56 @@
     body {
       background-color: #060a14;
       color: #e2e8f0;
-      background-image: 
+      background-image:
         radial-gradient(circle at 15% 15%, rgba(0, 229, 255, 0.09) 0%, transparent 40%),
         radial-gradient(circle at 85% 25%, rgba(251, 191, 36, 0.08) 0%, transparent 45%),
         radial-gradient(circle at 50% 85%, rgba(16, 240, 152, 0.07) 0%, transparent 50%);
       background-attachment: fixed;
     }
+
     .glass-card {
       background: rgba(14, 22, 40, 0.85);
       backdrop-filter: blur(16px);
       border: 1px solid rgba(255, 255, 255, 0.10);
       transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     }
+
     .glass-card:hover {
       border-color: rgba(0, 229, 255, 0.45);
       box-shadow: 0 10px 35px rgba(0, 229, 255, 0.15);
       transform: translateY(-2px);
     }
+
     .neon-glow-cyan {
       box-shadow: 0 0 30px rgba(0, 229, 255, 0.5);
     }
+
     .neon-glow-gold {
       box-shadow: 0 0 30px rgba(251, 191, 36, 0.5);
     }
+
     .neon-glow-emerald {
       box-shadow: 0 0 30px rgba(16, 240, 152, 0.5);
     }
+
+    @keyframes floatSlow {
+
+      0%,
+      100% {
+        transform: translateY(0px);
+      }
+
+      50% {
+        transform: translateY(-6px);
+      }
+    }
+
+    .animate-float {
+      animation: floatSlow 4s ease-in-out infinite;
+    }
   </style>
 </head>
+
 <body class="min-h-screen flex flex-col font-sans selection:bg-cyan-500 selection:text-black">
 
   <!-- Top Announcement Navigation Bar -->
@@ -87,35 +115,41 @@
           <span class="text-2xl group-hover:scale-110 transition-transform">💎</span>
           <div>
             <span class="font-extrabold text-sm sm:text-base tracking-wide text-white">pptx.kishor.tech</span>
-            <span class="hidden sm:inline-block ml-2 text-[10px] font-mono px-2.5 py-0.5 rounded-full bg-cyan-500/20 text-cyan-300 border border-cyan-500/40 font-bold uppercase tracking-wider">v3.0 Master · 24 Slides Widescreen</span>
+            <span
+              class="hidden sm:inline-block ml-2 text-[10px] font-mono px-2.5 py-0.5 rounded-full bg-cyan-500/20 text-cyan-300 border border-cyan-500/40 font-bold uppercase tracking-wider">v2.0
+              Enhanced · 16:9 Deck</span>
           </div>
         </a>
       </div>
 
       <!-- Quick Ecosystem Links -->
       <nav class="flex items-center gap-2 sm:gap-3 text-xs font-mono font-medium">
-        <a href="https://kishor.tech" target="_blank" class="hidden md:flex items-center gap-1 text-gray-300 hover:text-white transition">
+        <a href="https://kishor.tech" target="_blank"
+          class="hidden md:flex items-center gap-1 text-gray-300 hover:text-white transition">
           <span>🎓 kishor.tech</span>
         </a>
-        <a href="https://3d.kishor.tech" target="_blank" class="hidden md:flex items-center gap-1 text-gray-300 hover:text-white transition">
+        <a href="https://3d.kishor.tech" target="_blank"
+          class="hidden md:flex items-center gap-1 text-gray-300 hover:text-white transition">
           <span>🧊 3D World</span>
         </a>
-        <a href="https://macos.kishor.tech" target="_blank" class="hidden md:flex items-center gap-1 text-gray-300 hover:text-white transition">
+        <a href="https://macos.kishor.tech" target="_blank"
+          class="hidden md:flex items-center gap-1 text-gray-300 hover:text-white transition">
           <span>💻 macOS</span>
         </a>
-        <a href="https://hacker.kishor.tech" target="_blank" class="hidden md:flex items-center gap-1 text-gray-300 hover:text-white transition">
+        <a href="https://hacker.kishor.tech" target="_blank"
+          class="hidden md:flex items-center gap-1 text-gray-300 hover:text-white transition">
           <span>⚡ Hacker</span>
         </a>
-        
-        <a href="https://www.youtube.com/watch?v=mqX-2FW3o0Q" target="_blank" rel="noopener noreferrer" 
-           class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-red-600/30 hover:bg-red-600/50 border border-red-500/60 text-red-200 hover:text-white font-bold transition hover:scale-105">
+
+        <a href="https://www.youtube.com/watch?v=mqX-2FW3o0Q" target="_blank" rel="noopener noreferrer"
+          class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-red-600/30 hover:bg-red-600/50 border border-red-500/60 text-red-200 hover:text-white font-bold transition hover:scale-105 animate-pulse">
           <span class="size-2 rounded-full bg-red-500 animate-ping"></span>
           <span>🎬 Watch 90s Reel</span>
         </a>
 
-        <a href="/Kishor_Kumar_Paroi_10000_Dollar_Executive_Deck.pptx" download 
-           class="flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-gradient-to-r from-amber-400 to-yellow-400 hover:from-amber-300 hover:to-yellow-300 text-black font-extrabold transition hover:scale-105 shadow-md shadow-amber-500/30">
-          <span>⬇️ PPTX (5.3 MB)</span>
+        <a href="/Kishor_Kumar_Paroi_10000_Dollar_Executive_Deck.pptx" download
+          class="flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-gradient-to-r from-amber-400 to-yellow-400 hover:from-amber-300 hover:to-yellow-300 text-black font-extrabold transition hover:scale-105 shadow-md shadow-amber-500/30">
+          <span>⬇️ PPTX (5.2 MB)</span>
         </a>
       </nav>
     </div>
@@ -123,41 +157,54 @@
 
   <!-- Hero Header -->
   <main class="flex-1 max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-16 w-full">
-    
+
     <div class="text-center max-w-4xl mx-auto mb-12">
       <!-- Status Pill -->
-      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cyan-950/80 border border-cyan-400/50 text-cyan-300 font-mono text-xs font-bold mb-6 shadow-lg shadow-cyan-500/10">
+      <div
+        class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cyan-950/80 border border-cyan-400/50 text-cyan-300 font-mono text-xs font-bold mb-6 shadow-lg shadow-cyan-500/10">
         <span class="size-2 rounded-full bg-cyan-400 animate-pulse"></span>
         <span>EXECUTIVE STRATEGY & HIGH-PERFORMANCE ARCHITECTURE · 2026 EDITION</span>
       </div>
 
       <!-- Main Headline -->
-      <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-tight sm:leading-none mb-6">
-        The <span class="bg-gradient-to-r from-yellow-300 via-amber-400 to-orange-400 bg-clip-text text-transparent">$10,000 Executive</span> AI Pitch Deck
+      <h1
+        class="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-tight sm:leading-none mb-6">
+        The <span
+          class="bg-gradient-to-r from-yellow-300 via-amber-400 to-orange-400 bg-clip-text text-transparent">$10,000
+          Executive</span> AI Pitch Deck
       </h1>
 
       <p class="text-base sm:text-xl text-gray-200 max-w-3xl mx-auto leading-relaxed mb-8">
-        24 high-impact widescreen slides authored by <strong class="text-white font-bold">Kishor Kumar Paroi</strong> (Principal AI Systems Architect & Founder @ KoomAI). Featuring <span class="text-cyan-300 font-semibold">all 15 project architectures</span>, <span class="text-emerald-300 font-semibold">executive resume & academic pedigree</span>, <span class="text-amber-300 font-semibold">native vector telemetry wall</span>, and <span class="text-purple-300 font-semibold">zero font overlap with 100% online viewer compatibility</span>.
+        16 high-impact slides authored by <strong class="text-white font-bold">Kishor Kumar Paroi</strong> (Principal AI
+        Systems Architect & Founder @ KoomAI). Featuring <span class="text-cyan-300 font-semibold">hyper-legible
+          boardroom fonts</span>, <span class="text-emerald-300 font-semibold">native benchmark charts</span>, <span
+          class="text-amber-300 font-semibold">architectural blueprints</span>, and <span
+          class="text-purple-300 font-semibold">cinematic transitions</span>.
       </p>
 
       <!-- Primary Action Buttons -->
       <div class="flex flex-wrap items-center justify-center gap-4">
-        <a href="/Kishor_Kumar_Paroi_10000_Dollar_Executive_Deck.pptx" download 
-           class="flex items-center gap-2.5 px-7 py-4 rounded-2xl bg-gradient-to-r from-yellow-400 via-amber-400 to-yellow-500 hover:from-yellow-300 hover:to-yellow-400 text-black font-extrabold text-sm sm:text-base transition-all duration-300 hover:scale-105 neon-glow-gold border-2 border-yellow-200">
-          <svg class="size-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
-          <span>Download Executive Deck (.pptx · 5.3 MB)</span>
+        <a href="/Kishor_Kumar_Paroi_10000_Dollar_Executive_Deck.pptx" download
+          class="flex items-center gap-2.5 px-7 py-4 rounded-2xl bg-gradient-to-r from-yellow-400 via-amber-400 to-yellow-500 hover:from-yellow-300 hover:to-yellow-400 text-black font-extrabold text-sm sm:text-base transition-all duration-300 hover:scale-105 neon-glow-gold border-2 border-yellow-200">
+          <svg class="size-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+              d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+          </svg>
+          <span>Download Executive Deck (.pptx · 5.2 MB)</span>
         </a>
 
-        <a href="https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fpptx.kishor.tech%2FKishor_Kumar_Paroi_10000_Dollar_Executive_Deck.pptx" 
-           target="_blank" rel="noopener noreferrer"
-           class="flex items-center gap-2 px-6 py-4 rounded-2xl bg-white/10 hover:bg-white/15 text-gray-200 hover:text-white font-semibold text-sm border border-white/15 transition">
-          <span>👁️ View in Microsoft Office Online</span>
+        <a href="https://www.youtube.com/watch?v=mqX-2FW3o0Q" target="_blank" rel="noopener noreferrer"
+          class="flex items-center gap-2.5 px-6 py-4 rounded-2xl bg-gradient-to-r from-red-600 to-rose-600 hover:from-red-500 hover:to-rose-500 text-white font-extrabold text-sm sm:text-base transition-all duration-300 hover:scale-105 shadow-xl shadow-red-600/30 border border-red-400/50">
+          <svg class="size-5 fill-white" viewBox="0 0 24 24">
+            <path d="M8 5v14l11-7z" />
+          </svg>
+          <span>Watch $1.4M Cinematic Reel (90s 4K)</span>
         </a>
 
-        <a href="https://docs.google.com/viewer?url=https%3A%2F%2Fpptx.kishor.tech%2FKishor_Kumar_Paroi_10000_Dollar_Executive_Deck.pptx" 
-           target="_blank" rel="noopener noreferrer"
-           class="flex items-center gap-2 px-6 py-4 rounded-2xl bg-white/10 hover:bg-white/15 text-gray-200 hover:text-white font-semibold text-sm border border-white/15 transition">
-          <span>📄 View in Google Slides / Docs</span>
+        <a href="https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fpptx.kishor.tech%2FKishor_Kumar_Paroi_10000_Dollar_Executive_Deck.pptx"
+          target="_blank" rel="noopener noreferrer"
+          class="flex items-center gap-2 px-5 py-4 rounded-2xl bg-white/10 hover:bg-white/15 text-gray-200 hover:text-white font-semibold text-sm border border-white/15 transition">
+          <span>👁️ View in Office Online</span>
         </a>
       </div>
     </div>
@@ -201,110 +248,26 @@
       </div>
     </div>
 
-    <!-- Interactive In-Browser Live Presentation Viewer (Microsoft & Google Online) -->
-    <div id="live-presentation" class="glass-card rounded-3xl p-6 sm:p-8 mb-16 border border-cyan-500/40 shadow-2xl relative overflow-hidden">
-      <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6 pb-6 border-b border-white/10">
-        <div>
-          <div class="flex items-center gap-2 mb-1">
-            <span class="text-xs font-mono text-cyan-400 uppercase tracking-wider font-bold">LIVE INTERACTIVE EMBED</span>
-            <span class="text-[10px] font-mono px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 font-bold uppercase">ZERO DOWNLOAD REQUIRED</span>
-          </div>
-          <h2 class="text-xl sm:text-3xl font-extrabold text-white">Full 24-Slide Interactive Presentation</h2>
-          <p class="text-xs sm:text-sm text-gray-300 mt-1">Browse, present, and inspect all 15 project architectures directly in your browser powered by Microsoft & Google Cloud Viewers.</p>
-        </div>
-
-        <!-- Viewer Switcher Tabs -->
-        <div class="flex items-center gap-2 bg-black/40 p-1.5 rounded-2xl border border-white/10">
-          <button id="btn-microsoft" onclick="switchViewer('microsoft')" 
-                  class="px-4 py-2 rounded-xl text-xs font-mono font-bold transition flex items-center gap-2 bg-gradient-to-r from-cyan-500 to-blue-600 text-white shadow-lg">
-            <span>Microsoft Office</span>
-          </button>
-          <button id="btn-google" onclick="switchViewer('google')" 
-                  class="px-4 py-2 rounded-xl text-xs font-mono font-bold transition flex items-center gap-2 text-gray-400 hover:text-white">
-            <span>Google Docs</span>
-          </button>
-          <a href="https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fpptx.kishor.tech%2FKishor_Kumar_Paroi_10000_Dollar_Executive_Deck.pptx" 
-             target="_blank" rel="noopener noreferrer" 
-             title="Open In Native Fullscreen Tab"
-             class="p-2 rounded-xl text-gray-400 hover:text-cyan-300 hover:bg-white/10 transition">
-            <svg class="size-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-          </a>
-        </div>
-      </div>
-
-      <!-- Presentation Frame Container -->
-      <div class="relative w-full rounded-2xl overflow-hidden border border-white/15 bg-black/80 shadow-inner" style="min-height: 580px; height: 70vh;">
-        <!-- Loading State Indicator -->
-        <div id="viewer-loading" class="absolute inset-0 flex flex-col items-center justify-center bg-black/80 z-0 pointer-events-none transition-opacity duration-500">
-          <div class="size-10 border-4 border-cyan-500/20 border-t-cyan-400 rounded-full animate-spin mb-3"></div>
-          <span class="text-xs font-mono text-cyan-300 font-semibold tracking-wider">STREAMING EXECUTIVE SLIDES...</span>
-        </div>
-
-        <iframe id="presentation-frame"
-                src="https://view.officeapps.live.com/op/embed.aspx?src=https%3A%2F%2Fpptx.kishor.tech%2FKishor_Kumar_Paroi_10000_Dollar_Executive_Deck.pptx" 
-                class="relative z-10 w-full h-full border-0" 
-                allowfullscreen="true" 
-                mozallowfullscreen="true" 
-                webkitallowfullscreen="true"
-                onload="document.getElementById('viewer-loading').style.opacity = '0';">
-        </iframe>
-      </div>
-
-      <!-- Quick Control Bar Below Frame -->
-      <div class="mt-4 flex flex-wrap items-center justify-between gap-3 text-xs font-mono text-gray-400 px-2">
-        <div class="flex items-center gap-2">
-          <span class="size-2 rounded-full bg-emerald-400 animate-pulse"></span>
-          <span>16:9 Widescreen &bull; 100% ECMA-376 OpenXML &bull; 24 Master Slides</span>
-        </div>
-        <div class="flex items-center gap-4">
-          <a href="/Kishor_Kumar_Paroi_10000_Dollar_Executive_Deck.pptx" download class="text-amber-400 hover:text-amber-300 font-bold underline transition">
-            Download Local .pptx (5.3 MB)
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Viewer Switcher Script -->
-    <script>
-      function switchViewer(type) {
-        const frame = document.getElementById('presentation-frame');
-        const loading = document.getElementById('viewer-loading');
-        const btnMs = document.getElementById('btn-microsoft');
-        const btnGg = document.getElementById('btn-google');
-        const fileUrl = encodeURIComponent('https://pptx.kishor.tech/Kishor_Kumar_Paroi_10000_Dollar_Executive_Deck.pptx');
-
-        loading.style.opacity = '1';
-
-        if (type === 'microsoft') {
-          frame.src = 'https://view.officeapps.live.com/op/embed.aspx?src=' + fileUrl;
-          btnMs.className = 'px-4 py-2 rounded-xl text-xs font-mono font-bold transition flex items-center gap-2 bg-gradient-to-r from-cyan-500 to-blue-600 text-white shadow-lg';
-          btnGg.className = 'px-4 py-2 rounded-xl text-xs font-mono font-bold transition flex items-center gap-2 text-gray-400 hover:text-white';
-        } else {
-          frame.src = 'https://docs.google.com/viewer?url=' + fileUrl + '&embedded=true';
-          btnGg.className = 'px-4 py-2 rounded-xl text-xs font-mono font-bold transition flex items-center gap-2 bg-gradient-to-r from-amber-500 to-yellow-600 text-white shadow-lg';
-          btnMs.className = 'px-4 py-2 rounded-xl text-xs font-mono font-bold transition flex items-center gap-2 text-gray-400 hover:text-white';
-        }
-      }
-    </script>
-
     <!-- Presentation Cover & Visual Preview Section (First vs Last Slide Distinct) -->
     <div class="glass-card rounded-3xl p-6 sm:p-8 mb-16 border border-white/10 shadow-2xl">
       <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6 pb-6 border-b border-white/10">
         <div>
           <div class="flex items-center gap-2 mb-1">
             <span class="text-xs font-mono text-cyan-400 uppercase tracking-wider font-bold">SLIDE SHOWCASE</span>
-            <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 font-bold">DISTINCT COVER & OUTRO</span>
+            <span
+              class="text-[10px] font-mono px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 font-bold">DISTINCT
+              COVER & OUTRO</span>
           </div>
           <h2 class="text-xl sm:text-2xl font-bold text-white">Full-Bleed 16:9 Presentation Visuals</h2>
         </div>
         <div class="flex items-center gap-3">
-          <a href="/Kishor_Kumar_Paroi_10000_Dollar_Executive_Deck.pptx" download 
-             class="px-4 py-2 rounded-xl bg-amber-500/20 hover:bg-amber-500/30 border border-amber-400/40 text-amber-300 font-mono text-xs font-bold transition flex items-center gap-2">
-            <span>⬇️ Download .pptx (5.3 MB)</span>
+          <a href="/Kishor_Kumar_Paroi_10000_Dollar_Executive_Deck.pptx" download
+            class="px-4 py-2 rounded-xl bg-amber-500/20 hover:bg-amber-500/30 border border-amber-400/40 text-amber-300 font-mono text-xs font-bold transition flex items-center gap-2">
+            <span>⬇️ Download .pptx (5.2 MB)</span>
           </a>
-          <a href="https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fpptx.kishor.tech%2FKishor_Kumar_Paroi_10000_Dollar_Executive_Deck.pptx" 
-             target="_blank" rel="noopener noreferrer"
-             class="px-4 py-2 rounded-xl bg-cyan-500/20 hover:bg-cyan-500/30 border border-cyan-400/40 text-cyan-300 font-mono text-xs font-bold transition flex items-center gap-2">
+          <a href="https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fpptx.kishor.tech%2FKishor_Kumar_Paroi_10000_Dollar_Executive_Deck.pptx"
+            target="_blank" rel="noopener noreferrer"
+            class="px-4 py-2 rounded-xl bg-cyan-500/20 hover:bg-cyan-500/30 border border-cyan-400/40 text-cyan-300 font-mono text-xs font-bold transition flex items-center gap-2">
             <span>🖥️ Fullscreen Viewer ↗</span>
           </a>
         </div>
@@ -314,27 +277,36 @@
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
         <!-- Cover Slide (Slide 01) -->
         <div class="relative group rounded-2xl overflow-hidden border border-cyan-500/30 bg-black/50 shadow-xl">
-          <img src="/cover.png" alt="Executive Pitch Deck Cover Slide (Slide 1)" class="w-full h-auto object-cover group-hover:scale-102 transition-transform duration-300">
+          <img src="/cover.png" alt="Executive Pitch Deck Cover Slide (Slide 1)"
+            class="w-full h-auto object-cover group-hover:scale-102 transition-transform duration-300">
           <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/95 via-black/60 to-transparent p-5">
             <div class="flex items-center gap-2 mb-1">
-              <span class="text-[10px] font-mono font-bold text-cyan-300 uppercase tracking-wider px-2 py-0.5 bg-cyan-900/60 rounded border border-cyan-500/30">Slide 01 // Opening Hero</span>
+              <span
+                class="text-[10px] font-mono font-bold text-cyan-300 uppercase tracking-wider px-2 py-0.5 bg-cyan-900/60 rounded border border-cyan-500/30">Slide
+                01 // Opening Hero</span>
               <span class="text-[10px] font-mono text-yellow-400 font-semibold">● Apple Keynote Minimalist</span>
             </div>
             <div class="text-base font-extrabold text-white">The $1.4M AI System — Executive Identity & Hero Cover</div>
-            <p class="text-xs text-gray-300 mt-1">Studio lighting, celestial cyan ambient glow, and high-impact identity.</p>
+            <p class="text-xs text-gray-300 mt-1">Studio lighting, celestial cyan ambient glow, and high-impact
+              identity.</p>
           </div>
         </div>
 
-        <!-- Outro Slide (Slide 24) - Distinct Design -->
+        <!-- Outro Slide (Slide 16) - Distinct Design -->
         <div class="relative group rounded-2xl overflow-hidden border border-emerald-500/30 bg-black/50 shadow-xl">
-          <img src="/outro.png" alt="Executive Pitch Deck Closing Outro Slide (Slide 24)" class="w-full h-auto object-cover group-hover:scale-102 transition-transform duration-300">
+          <img src="/outro.png" alt="Executive Pitch Deck Closing Outro Slide (Slide 16)"
+            class="w-full h-auto object-cover group-hover:scale-102 transition-transform duration-300">
           <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/95 via-black/60 to-transparent p-5">
             <div class="flex items-center gap-2 mb-1">
-              <span class="text-[10px] font-mono font-bold text-emerald-300 uppercase tracking-wider px-2 py-0.5 bg-emerald-900/60 rounded border border-emerald-500/30">Slide 24 // Distinct Outro</span>
-              <span class="text-[10px] font-mono text-amber-400 font-semibold">● Vantage Retro Synthwave Crest</span>
+              <span
+                class="text-[10px] font-mono font-bold text-emerald-300 uppercase tracking-wider px-2 py-0.5 bg-emerald-900/60 rounded border border-emerald-500/30">Slide
+                16 // Distinct Outro</span>
+              <span class="text-[10px] font-mono text-amber-400 font-semibold">● Animation Vantage Retro</span>
             </div>
-            <div class="text-base font-extrabold text-white">The Vantage Retro AI Architect — Collaboration Hub</div>
-            <p class="text-xs text-gray-300 mt-1">80s/90s Synthwave anime aesthetic, neon wireframe horizon, holographic cyberdeck, and direct contact gateways.</p>
+            <div class="text-base font-extrabold text-white">The Vantage Retro AI Architect — Thank You & Collaboration
+              Hub</div>
+            <p class="text-xs text-gray-300 mt-1">80s/90s Synthwave anime aesthetic, neon wireframe horizon, holographic
+              cyberdeck, and direct contact gateways.</p>
           </div>
         </div>
       </div>
@@ -344,181 +316,150 @@
     <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-16">
       <div class="glass-card p-5 rounded-2xl border-t-2 border-t-cyan-400">
         <span class="text-2xl mb-2 block">🔤</span>
-        <h3 class="font-bold text-white text-sm mb-1">Zero Font Overlap</h3>
-        <p class="text-xs text-gray-300 leading-relaxed">Exact mathematical bounding boxes with Pt(10)–Pt(14) typography ensuring 100% legibility across cards.</p>
+        <h3 class="font-bold text-white text-sm mb-1">Hyper-Legible Fonts</h3>
+        <p class="text-xs text-gray-300 leading-relaxed">Scaled up to Pt(16)–Pt(26) with crisp white lead-ins and
+          high-contrast silver body text for boardroom scannability.</p>
       </div>
 
       <div class="glass-card p-5 rounded-2xl border-t-2 border-t-purple-400">
         <span class="text-2xl mb-2 block">📊</span>
-        <h3 class="font-bold text-white text-sm mb-1">Native Vector Telemetry</h3>
-        <p class="text-xs text-gray-300 leading-relaxed">Pure OpenXML vector progress bars and KPI telemetry cards with zero corrupt workbook dependencies.</p>
+        <h3 class="font-bold text-white text-sm mb-1">Native PPTX Charts</h3>
+        <p class="text-xs text-gray-300 leading-relaxed">Direct PowerPoint clustered column charts comparing Rust SIMD
+          50x speedups and $30K/mo compute reductions.</p>
       </div>
 
       <div class="glass-card p-5 rounded-2xl border-t-2 border-t-emerald-400">
         <span class="text-2xl mb-2 block">📐</span>
-        <h3 class="font-bold text-white text-sm mb-1">All 15 Project Blueprints</h3>
-        <p class="text-xs text-gray-300 leading-relaxed">High-resolution topology diagrams embedded with 4-pillar architectural breakdowns and verified metrics.</p>
+        <h3 class="font-bold text-white text-sm mb-1">Real Architecture Blueprints</h3>
+        <p class="text-xs text-gray-300 leading-relaxed">High-resolution system diagrams embedded across Medallion
+          Lakehouse, Hybrid RAG, KoomAI, and GitOps.</p>
       </div>
 
       <div class="glass-card p-5 rounded-2xl border-t-2 border-t-amber-400">
-        <span class="text-2xl mb-2 block">☁️</span>
-        <h3 class="font-bold text-white text-sm mb-1">Office Online Ready</h3>
-        <p class="text-xs text-gray-300 leading-relaxed">100% ECMA-376 schema compliant; opens instantly in Microsoft PowerPoint Online without download prompt.</p>
+        <span class="text-2xl mb-2 block">✨</span>
+        <h3 class="font-bold text-white text-sm mb-1">Smooth Slide Transitions</h3>
+        <p class="text-xs text-gray-300 leading-relaxed">Native PowerPoint XML fade transitions on all 16 slides for a
+          seamless, cinematic presentation experience.</p>
       </div>
     </div>
 
-    <!-- Table of Contents / 24 Slide Architecture Matrix -->
+    <!-- Table of Contents / 16 Slide Architecture Matrix -->
     <div class="mb-16">
       <div class="text-center max-w-2xl mx-auto mb-10">
-        <span class="text-xs font-mono text-amber-400 uppercase tracking-wider font-bold block mb-1">COMPLETE ARCHITECTURAL BREAKDOWN</span>
-        <h2 class="text-2xl sm:text-3xl font-extrabold text-white">Inside the 24 Master Executive Slides</h2>
-        <p class="text-sm text-gray-300 mt-2">Every slide delivers mathematical foundations, enterprise codebases, and quantified financial benchmarks.</p>
+        <span class="text-xs font-mono text-amber-400 uppercase tracking-wider font-bold block mb-1">COMPLETE
+          ARCHITECTURAL BREAKDOWN</span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-white">Inside the 16 Executive Slides</h2>
+        <p class="text-sm text-gray-300 mt-2">Every slide delivers mathematical foundations, enterprise codebases, and
+          quantified financial benchmarks.</p>
       </div>
 
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-        
+
         <div class="glass-card p-5 rounded-2xl border-l-4 border-l-cyan-400">
-          <span class="text-[11px] font-mono text-cyan-400 font-bold block mb-1">SLIDE 01 &bull; HERO COVER</span>
-          <h3 class="font-bold text-white text-sm mb-1">Apple Keynote Minimalist Cover</h3>
-          <p class="text-xs text-gray-300 leading-relaxed">Studio lighting, celestial cyan ambient glow, and high-impact identity.</p>
-        </div>
-
-        <div class="glass-card p-5 rounded-2xl border-l-4 border-l-goldAccent">
-          <span class="text-[11px] font-mono text-amber-400 font-bold block mb-1">SLIDE 02 &bull; EXECUTIVE PERSONA</span>
-          <h3 class="font-bold text-white text-sm mb-1">Identity & Verified Production Rigor</h3>
-          <p class="text-xs text-gray-300 leading-relaxed">Founder @ KoomAI, FDE @ phi0.ai, Ex-Samsung AI Core, and $1.4M ARR telemetry wall.</p>
-        </div>
-
-        <div class="glass-card p-5 rounded-2xl border-l-4 border-l-emerald-400">
-          <span class="text-[11px] font-mono text-emerald-400 font-bold block mb-1">SLIDE 03 &bull; RESUME & PEDIGREE</span>
-          <h3 class="font-bold text-white text-sm mb-1">Executive Resume & Dual Track</h3>
-          <p class="text-xs text-gray-300 leading-relaxed">phi0.ai, Samsung AI Core, kepi.ai, RUET CSE Merit Rank 483rd, St. Joseph, and ICPC contest honors.</p>
+          <span class="text-[11px] font-mono text-cyan-400 font-bold block mb-1">SLIDE 01 &bull; HERO</span>
+          <h3 class="font-bold text-white text-sm mb-2">Executive Persona & Live Rigor</h3>
+          <p class="text-xs text-gray-300 leading-relaxed">Identity, studio portrait avatar, remote availability, and
+            live telemetry grid ($1.4M ARR, &lt;35ms, 50x Rust).</p>
         </div>
 
         <div class="glass-card p-5 rounded-2xl border-l-4 border-l-rose-400">
-          <span class="text-[11px] font-mono text-rose-400 font-bold block mb-1">SLIDE 04 &bull; SYSTEMS THESIS</span>
-          <h3 class="font-bold text-white text-sm mb-1">The 4 Production AI Pillars</h3>
-          <p class="text-xs text-gray-300 leading-relaxed">Sub-35ms Retrieval, Multi-LoRA vLLM, Zero-Trust NeMo Defense, and Medallion Lakehouses.</p>
-        </div>
-
-        <div class="glass-card p-5 rounded-2xl border-l-4 border-l-purple-400">
-          <span class="text-[11px] font-mono text-purple-400 font-bold block mb-1">SLIDE 05 &bull; TELEMETRY WALL</span>
-          <h3 class="font-bold text-white text-sm mb-1">Executive Benchmarks & Cost Cuts</h3>
-          <p class="text-xs text-gray-300 leading-relaxed">Vector progress bars: 12x faster RAG P95, 88% cheaper tokens, 99.4% precision, 90x faster feature lookup.</p>
-        </div>
-
-        <div class="glass-card p-5 rounded-2xl border-l-4 border-l-cyan-400">
-          <span class="text-[11px] font-mono text-cyan-400 font-bold block mb-1">SLIDE 06 &bull; PROJECT 01</span>
-          <h3 class="font-bold text-white text-sm mb-1">Zomato AI Lakehouse & Dispute</h3>
-          <p class="text-xs text-gray-300 leading-relaxed">35M+ orders, PySpark Delta Lake, Snowflake, Feast &lt;5ms Redis, dHash CV fraud arbitration ($1.2M saved).</p>
-        </div>
-
-        <div class="glass-card p-5 rounded-2xl border-l-4 border-l-purple-400">
-          <span class="text-[11px] font-mono text-purple-400 font-bold block mb-1">SLIDE 07 &bull; PROJECT 02</span>
-          <h3 class="font-bold text-white text-sm mb-1">Hybrid Anime Intelligence LLMOps</h3>
-          <p class="text-xs text-gray-300 leading-relaxed">Go/Rust/FastAPI mesh, 50x SIMD speedup, Dual-Tower NCF + ChromaDB, vLLM Multi-LoRA multiplexing.</p>
+          <span class="text-[11px] font-mono text-rose-400 font-bold block mb-1">SLIDE 02 &bull; THESIS</span>
+          <h3 class="font-bold text-white text-sm mb-2">Predictable Sub-Millisecond AI</h3>
+          <p class="text-xs text-gray-300 leading-relaxed">3 core pillars: Autonomous Multi-Agent Meshes, Sub-35ms
+            Hybrid RAG, and Medallion Lakehouses at scale.</p>
         </div>
 
         <div class="glass-card p-5 rounded-2xl border-l-4 border-l-amber-400">
-          <span class="text-[11px] font-mono text-amber-400 font-bold block mb-1">SLIDE 08 &bull; PROJECT 03</span>
-          <h3 class="font-bold text-white text-sm mb-1">KoomAI: $24K MRR Platform</h3>
-          <p class="text-xs text-gray-300 leading-relaxed">Sub-150ms WebRTC media engine, 20-agent LangGraph mesh, Next.js 15, Chrome Extension, Electron client.</p>
+          <span class="text-[11px] font-mono text-amber-400 font-bold block mb-1">SLIDE 03 &bull; KPI WALL &
+            CHART</span>
+          <h3 class="font-bold text-white text-sm mb-2">Verified Telemetry & ROI Chart</h3>
+          <p class="text-xs text-gray-300 leading-relaxed">Native PowerPoint column chart showing 67% cloud spend
+            reduction alongside 4 glowing telemetry KPI cards.</p>
         </div>
 
-        <div class="glass-card p-5 rounded-2xl border-l-4 border-l-emerald-400">
-          <span class="text-[11px] font-mono text-emerald-400 font-bold block mb-1">SLIDE 09 &bull; PROJECT 04</span>
-          <h3 class="font-bold text-white text-sm mb-1">Enterprise AI Security & RAG</h3>
-          <p class="text-xs text-gray-300 leading-relaxed">BotShield WAF, NVIDIA NeMo Guardrails, PyRIT tested (95%+ blocked), Portkey semantic cache &lt;35ms.</p>
-        </div>
-
-        <div class="glass-card p-5 rounded-2xl border-l-4 border-l-cyan-400">
-          <span class="text-[11px] font-mono text-cyan-400 font-bold block mb-1">SLIDE 10 &bull; PROJECT 05</span>
-          <h3 class="font-bold text-white text-sm mb-1">Smart Manufacturing Industrial AI</h3>
-          <p class="text-xs text-gray-300 leading-relaxed">Rust SIMD vibration pre-filter, PyTorch autoencoders, TensorRT INT8 (&lt;8.2ms), 12-stage ArgoCD GitOps.</p>
-        </div>
-
-        <div class="glass-card p-5 rounded-2xl border-l-4 border-l-goldAccent">
-          <span class="text-[11px] font-mono text-amber-400 font-bold block mb-1">SLIDE 11 &bull; PROJECT 06</span>
-          <h3 class="font-bold text-white text-sm mb-1">Nexus-AI Multi-Cloud Lakehouse</h3>
-          <p class="text-xs text-gray-300 leading-relaxed">AWS/GCP/Azure Delta Lake, LangGraph 4-agent mesh (NL2SQL/BI/MLOps), Go 1.22 gateway, Next.js 16 SSE.</p>
+        <div class="glass-card p-5 rounded-2xl border-l-4 border-l-yellow-400">
+          <span class="text-[11px] font-mono text-yellow-400 font-bold block mb-1">SLIDE 04 &bull; FOUNDER CASE</span>
+          <h3 class="font-bold text-white text-sm mb-2">KoomAI: $24K MRR Platform</h3>
+          <p class="text-xs text-gray-300 leading-relaxed">Embedded distributed architecture flow diagram, sub-150ms
+            WebRTC engine, and multi-tenant cloud core.</p>
         </div>
 
         <div class="glass-card p-5 rounded-2xl border-l-4 border-l-cyan-400">
-          <span class="text-[11px] font-mono text-cyan-400 font-bold block mb-1">SLIDE 12 &bull; PROJECT 07</span>
-          <h3 class="font-bold text-white text-sm mb-1">Network Security Azure Lakehouse</h3>
-          <p class="text-xs text-gray-300 leading-relaxed">ADF ingestion, ADLS Gen2, Synapse serverless CETAS (-58% cost), Power BI DirectQuery threat analytics.</p>
-        </div>
-
-        <div class="glass-card p-5 rounded-2xl border-l-4 border-l-amber-400">
-          <span class="text-[11px] font-mono text-amber-400 font-bold block mb-1">SLIDE 13 &bull; PROJECT 08</span>
-          <h3 class="font-bold text-white text-sm mb-1">AWS SageMaker End-to-End MLOps</h3>
-          <p class="text-xs text-gray-300 leading-relaxed">Automated SageMaker Pipelines, Feature Store, Model Registry, Canary rollouts, Clarify drift monitoring.</p>
+          <span class="text-[11px] font-mono text-cyan-400 font-bold block mb-1">SLIDE 05 &bull; SECURITY & RAG</span>
+          <h3 class="font-bold text-white text-sm mb-2">Defense-in-Depth Agentic RAG</h3>
+          <p class="text-xs text-gray-300 leading-relaxed">Embedded hybrid reranker cascade blueprint, PyRIT prompt
+            injection defense, Presidio PII redaction, and ONNX reranking.</p>
         </div>
 
         <div class="glass-card p-5 rounded-2xl border-l-4 border-l-emerald-400">
-          <span class="text-[11px] font-mono text-emerald-400 font-bold block mb-1">SLIDE 14 &bull; PROJECT 09</span>
-          <h3 class="font-bold text-white text-sm mb-1">Cloud-Native KServe Serving</h3>
-          <p class="text-xs text-gray-300 leading-relaxed">Scale-to-zero serverless inference on K8s (-72% idle GPU spend), Triton/vLLM runtimes, Istio mTLS mesh.</p>
+          <span class="text-[11px] font-mono text-emerald-400 font-bold block mb-1">SLIDE 06 &bull; LAKEHOUSE</span>
+          <h3 class="font-bold text-white text-sm mb-2">Delta Lake Medallion (10M+ Records)</h3>
+          <p class="text-xs text-gray-300 leading-relaxed">Embedded production lakehouse diagram, Debezium CDC WAL
+            Kafka, PySpark Delta Lake, and $18K/mo Snowflake savings.</p>
         </div>
 
         <div class="glass-card p-5 rounded-2xl border-l-4 border-l-purple-400">
-          <span class="text-[11px] font-mono text-purple-400 font-bold block mb-1">SLIDE 15 &bull; PROJECT 10</span>
-          <h3 class="font-bold text-white text-sm mb-1">Production AI Chatbot & HITL</h3>
-          <p class="text-xs text-gray-300 leading-relaxed">LangGraph stateful graph with MemorySaver, Human-in-the-Loop break-glass gates, 100% auditable logging.</p>
+          <span class="text-[11px] font-mono text-purple-400 font-bold block mb-1">SLIDE 07 &bull; SYSTEMS CHART</span>
+          <h3 class="font-bold text-white text-sm mb-2">Rust SIMD Latency Benchmark Chart</h3>
+          <p class="text-xs text-gray-300 leading-relaxed">Native PowerPoint clustered column chart showing Rust AVX-512
+            0.48ms vs Python 25.4ms (52.9x faster).</p>
+        </div>
+
+        <div class="glass-card p-5 rounded-2xl border-l-4 border-l-amber-400">
+          <span class="text-[11px] font-mono text-amber-400 font-bold block mb-1">SLIDE 08 &bull; IIoT EDGE</span>
+          <h3 class="font-bold text-white text-sm mb-2">Industrial AI & On-Device SLMs</h3>
+          <p class="text-xs text-gray-300 leading-relaxed">120 FPS YOLOv8 TensorRT vision, 72h advance FFT predictive
+            maintenance, and 42 tok/sec offline local LLMs.</p>
         </div>
 
         <div class="glass-card p-5 rounded-2xl border-l-4 border-l-cyan-400">
-          <span class="text-[11px] font-mono text-cyan-400 font-bold block mb-1">SLIDE 16 &bull; PROJECT 11</span>
-          <h3 class="font-bold text-white text-sm mb-1">Autonomous Data Agent Engine</h3>
-          <p class="text-xs text-gray-300 leading-relaxed">Hierarchical agent graph (Planner, Schema Introspector, Validator), zero scan crashes, self-healing SQL.</p>
+          <span class="text-[11px] font-mono text-cyan-400 font-bold block mb-1">SLIDE 09 &bull; MULTI-CLOUD</span>
+          <h3 class="font-bold text-white text-sm mb-2">Multi-Cloud K8s & Governance</h3>
+          <p class="text-xs text-gray-300 leading-relaxed">AWS EKS, GCP GKE & Azure AKS with KEDA autoscaling, HashiCorp
+            Vault dynamic rotation, and Arize Phoenix tracing.</p>
+        </div>
+
+        <div class="glass-card p-5 rounded-2xl border-l-4 border-l-emerald-400">
+          <span class="text-[11px] font-mono text-emerald-400 font-bold block mb-1">SLIDE 10 &bull; GITOPS</span>
+          <h3 class="font-bold text-white text-sm mb-2">Deterministic GitOps Pipeline</h3>
+          <p class="text-xs text-gray-300 leading-relaxed">Embedded 12-stage ArgoCD GitOps blueprint, deterministic
+            single-command `deploy.sh` and $0.00 `clear.sh` teardown.</p>
         </div>
 
         <div class="glass-card p-5 rounded-2xl border-l-4 border-l-rose-400">
-          <span class="text-[11px] font-mono text-rose-400 font-bold block mb-1">SLIDE 17 &bull; PROJECT 12</span>
-          <h3 class="font-bold text-white text-sm mb-1">Rust Git Engine & POSIX Shell</h3>
-          <p class="text-xs text-gray-300 leading-relaxed">Bare-metal Git internals in Rust, streaming zlib SIMD decompression, async shell with &lt;1µs hot-path latency.</p>
-        </div>
-
-        <div class="glass-card p-5 rounded-2xl border-l-4 border-l-emerald-400">
-          <span class="text-[11px] font-mono text-emerald-400 font-bold block mb-1">SLIDE 18 &bull; PROJECT 13</span>
-          <h3 class="font-bold text-white text-sm mb-1">3D Cyber Hacker Cockpit WebGL</h3>
-          <p class="text-xs text-gray-300 leading-relaxed">Three.js, custom GLSL shaders, bloom scanlines, real-time WebSocket cyber threat telemetry at 60 FPS.</p>
+          <span class="text-[11px] font-mono text-rose-400 font-bold block mb-1">SLIDE 11 &bull; MATRIX</span>
+          <h3 class="font-bold text-white text-sm mb-2">Value Differentiation Matrix</h3>
+          <p class="text-xs text-gray-300 leading-relaxed">High-contrast comparison: Fragile POC Prototyper vs Principal
+            AI Systems Architect with full vertical ownership.</p>
         </div>
 
         <div class="glass-card p-5 rounded-2xl border-l-4 border-l-cyan-400">
-          <span class="text-[11px] font-mono text-cyan-400 font-bold block mb-1">SLIDE 19 &bull; PROJECT 14</span>
-          <h3 class="font-bold text-white text-sm mb-1">MacOS Sequoia Desktop Web OS</h3>
-          <p class="text-xs text-gray-300 leading-relaxed">Next.js 15, Framer Motion window physics, Zustand store, interactive Terminal, Safari, Web Audio API.</p>
+          <span class="text-[11px] font-mono text-cyan-400 font-bold block mb-1">SLIDE 12 &bull; THEORY</span>
+          <h3 class="font-bold text-white text-sm mb-2">Academic Foundation & Theory</h3>
+          <p class="text-xs text-gray-300 leading-relaxed">RUET CS degree (Rank 483rd nationwide), mathematical
+            foundations sabbatical, and AIE5 Bootcamp graduation.</p>
         </div>
 
         <div class="glass-card p-5 rounded-2xl border-l-4 border-l-purple-400">
-          <span class="text-[11px] font-mono text-purple-400 font-bold block mb-1">SLIDE 20 &bull; PROJECT 15</span>
-          <h3 class="font-bold text-white text-sm mb-1">3D Space Station Digital Twin</h3>
-          <p class="text-xs text-gray-300 leading-relaxed">WebGL space station twin, orbital physics simulation, sensor fusion telemetry HUD, mobile 60 FPS LOD.</p>
-        </div>
-
-        <div class="glass-card p-5 rounded-2xl border-l-4 border-l-rose-400">
-          <span class="text-[11px] font-mono text-rose-400 font-bold block mb-1">SLIDE 21 &bull; MATRIX</span>
-          <h3 class="font-bold text-white text-sm mb-1">Value Differentiation Matrix</h3>
-          <p class="text-xs text-gray-300 leading-relaxed">High-contrast comparison: Typical Senior Engineers vs Kishor's full-stack systems rigor and verified ROI.</p>
-        </div>
-
-        <div class="glass-card p-5 rounded-2xl border-l-4 border-l-cyan-400">
-          <span class="text-[11px] font-mono text-cyan-400 font-bold block mb-1">SLIDE 22 &bull; ROLES</span>
-          <h3 class="font-bold text-white text-sm mb-1">Target Roles & Engagement</h3>
-          <p class="text-xs text-gray-300 leading-relaxed">Principal AI Systems Architect, FDE, Executive AI Advisory, High-Impact 90-Day Enterprise Sprints.</p>
+          <span class="text-[11px] font-mono text-purple-400 font-bold block mb-1">SLIDE 13 &bull; ROLES</span>
+          <h3 class="font-bold text-white text-sm mb-2">Target Roles & Collaboration</h3>
+          <p class="text-xs text-gray-300 leading-relaxed">Principal AI Architect, Forward Deployed Engineer (FDE), or
+            Founding AI Engineer / Technical Co-Founder.</p>
         </div>
 
         <div class="glass-card p-5 rounded-2xl border-l-4 border-l-amber-400">
-          <span class="text-[11px] font-mono text-amber-400 font-bold block mb-1">SLIDE 23 &bull; ROADMAP</span>
-          <h3 class="font-bold text-white text-sm mb-1">90-Day Execution Roadmap</h3>
-          <p class="text-xs text-gray-300 leading-relaxed">Phase 1: Days 1–30 Audit & 50% Token Cut; Phase 2: Days 31–60 Agent Mesh; Phase 3: Days 61–90 Multi-Cloud Scale.</p>
+          <span class="text-[11px] font-mono text-amber-400 font-bold block mb-1">SLIDE 14 &bull; ROADMAP</span>
+          <h3 class="font-bold text-white text-sm mb-2">90-Day Strategic Impact Plan</h3>
+          <p class="text-xs text-gray-300 leading-relaxed">Phase 1: Days 1–30 Audit & 40% Token Cut; Phase 2: Days 31–60
+            Agent Mesh; Phase 3: Days 61–90 Multi-Cloud Scale.</p>
         </div>
 
-        <div class="glass-card p-5 rounded-2xl border-l-4 border-l-emerald-400">
-          <span class="text-[11px] font-mono text-emerald-400 font-bold block mb-1">SLIDE 24 &bull; DISTINCT OUTRO</span>
-          <h3 class="font-bold text-white text-sm mb-1">Vantage Retro Synthwave Crest</h3>
-          <p class="text-xs text-gray-300 leading-relaxed">Distinct closing slide: 80s synthwave anime aesthetic, holographic cyberdeck, and direct contact gateways.</p>
+        <div class="glass-card p-5 rounded-2xl border-l-4 border-l-emerald-400 sm:col-span-2">
+          <span class="text-[11px] font-mono text-emerald-400 font-bold block mb-1">SLIDE 15 &bull; DISTINCT
+            OUTRO</span>
+          <h3 class="font-bold text-white text-sm mb-2">Executive Collaboration Hub</h3>
+          <p class="text-xs text-gray-300 leading-relaxed">Holographic AI system crest, direct email, portfolio links,
+            GitHub open-source codebases, and LinkedIn advisory channels.</p>
         </div>
 
       </div>
@@ -533,16 +474,17 @@
         Ready to Engineer Mission-Critical Enterprise AI?
       </h2>
       <p class="text-gray-300 max-w-2xl mx-auto text-sm sm:text-base mb-8 leading-relaxed">
-        Download the editable 24-slide presentation for offline board presentations, executive architectural reviews, or technical diligence.
+        Download the editable 16-slide presentation for offline board presentations, executive architectural reviews, or
+        technical diligence.
       </p>
 
       <div class="flex flex-wrap items-center justify-center gap-4">
-        <a href="/Kishor_Kumar_Paroi_10000_Dollar_Executive_Deck.pptx" download 
-           class="px-8 py-4 rounded-2xl bg-gradient-to-r from-yellow-400 to-amber-500 hover:from-yellow-300 hover:to-amber-400 text-black font-extrabold text-base transition-all duration-300 hover:scale-105 neon-glow-gold">
-          <span>⬇️ Download Presentation (.pptx · 5.3 MB)</span>
+        <a href="/Kishor_Kumar_Paroi_10000_Dollar_Executive_Deck.pptx" download
+          class="px-8 py-4 rounded-2xl bg-gradient-to-r from-yellow-400 to-amber-500 hover:from-yellow-300 hover:to-amber-400 text-black font-extrabold text-base transition-all duration-300 hover:scale-105 neon-glow-gold">
+          <span>⬇️ Download Presentation (.pptx · 5.2 MB)</span>
         </a>
-        <a href="https://calendly.com/kishor-ruet-cse/15min" target="_blank" rel="noopener noreferrer" 
-           class="px-7 py-4 rounded-2xl bg-white/10 hover:bg-white/20 text-white font-bold text-base transition border border-white/10">
+        <a href="https://calendly.com/kishor-ruet-cse/15min" target="_blank" rel="noopener noreferrer"
+          class="px-7 py-4 rounded-2xl bg-white/10 hover:bg-white/20 text-white font-bold text-base transition border border-white/10">
           <span>📅 Book 15m Strategic Sync ↗</span>
         </a>
       </div>
@@ -560,10 +502,12 @@
         <a href="https://kishor.tech" target="_blank" class="hover:text-cyan-400 transition">kishor.tech</a>
         <a href="https://koom.kishor.tech" target="_blank" class="hover:text-amber-400 transition">koom.kishor.tech</a>
         <a href="https://github.com/KishorKumarParoi" target="_blank" class="hover:text-white transition">GitHub</a>
-        <a href="https://linkedin.com/in/kishor-kumar-paroi-b06344166" target="_blank" class="hover:text-blue-400 transition">LinkedIn</a>
+        <a href="https://linkedin.com/in/kishor-kumar-paroi-b06344166" target="_blank"
+          class="hover:text-blue-400 transition">LinkedIn</a>
       </div>
     </div>
   </footer>
 
 </body>
+
 </html>

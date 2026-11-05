@@ -99,3 +99,4 @@ python generate_master_deck.py
 * **macOS Portfolio:** [macos.kishor.tech](https://macos.kishor.tech)
 * **LinkedIn:** [linkedin.com/in/kishor-kumar-paroi-b06344166](https://linkedin.com/in/kishor-kumar-paroi-b06344166)
 * **Email:** [kishor.ruet.cse@gmail.com](mailto:kishor.ruet.cse@gmail.com)
+
