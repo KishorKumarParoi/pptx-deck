@@ -862,11 +862,11 @@ PROJECTS = [
         "category": "FLAGSHIP 16: LIVE VOICE & OMNICHANNEL SAAS",
         "title": "Omnichannel AI Voice & Chat Receptionist (ai-voice-receptionist.kishor.tech)",
         "subtitle": "Sub-500ms Vapi Squad Concierge, Multi-Channel Webhooks & Neon PG",
-        "badge": "<500MS E2E · 6 VERTICALS · +1-667-307-0119",
+        "badge": "<500MS E2E · 6 VERTICALS · +1-617-271-8180",
         "accent": BORDER_ROSE,
         "img_src": "/Users/kishorkumarparoi/job-project/pptx-deck/opt_img/p16_omnichannel.png",
         "bullets": [
-            ("Sub-500ms Voice & Vapi Squad:", "Launched live multi-tenant voice receptionist combining Deepgram Nova-2 STT (<180ms), FastAPI tool calling (<40ms), Cartesia Sonic-3.5 TTS (<110ms), Marcus ↔ Sophia transfers, dialect adaptation, WebRTC & PSTN (+1-667-307-0119)."),
+            ("Sub-500ms Voice & Vapi Squad:", "Launched live multi-tenant voice receptionist combining Deepgram Nova-2 STT (<180ms), FastAPI tool calling (<40ms), Cartesia Sonic-3.5 TTS (<110ms), Marcus ↔ Sophia transfers, dialect adaptation, WebRTC & PSTN (+1-617-271-8180)."),
             ("Omnichannel Social & Chat Engine:", "Unified webhook ingestion across Website Chat Widget (/widget.js), WhatsApp Cloud API, FB Messenger, Instagram DMs, Telegram, X, LinkedIn & TikTok with per-tenant 64-dim cosine vector FAQ RAG."),
             ("Multi-Tenant DB & Calendar Sync:", "Powered by Clerk Auth across 6 business verticals (Salon, Real Estate, Legal, Dental, Auto, Clinic), pooled Neon Serverless PostgreSQL + SQLite fallback, and 2-way Google Calendar API v3 OAuth2 sync."),
             ("Automated Reminders & n8n Ops:", "Runs Twilio SMS & WhatsApp booking confirmations, daily Vercel Cron (/api/cron/reminders) 24h/1h alerts, n8n Sophia escalations, Slack bot notifications, structured eval rubrics, and pytest pre-push gates.")
