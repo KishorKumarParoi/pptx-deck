@@ -4,7 +4,7 @@
 
 [![Live Presentation Hub](https://img.shields.io/badge/Live_Presentation-pptx.kishor.tech-00E5FF?style=for-the-badge&logo=google-chrome&logoColor=black)](https://pptx.kishor.tech)
 [![4K Cinematic Video Reel](https://img.shields.io/badge/YouTube_Video-4K_Cinematic_Reel-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=mqX-2FW3o0Q)
-[![Direct PPTX Download](https://img.shields.io/badge/Download_Deck-5.3_MB_.pptx-FBBF24?style=for-the-badge&logo=microsoftpowerpoint&logoColor=black)](https://pptx.kishor.tech/Kishor_Kumar_Paroi_10000_Dollar_Executive_Deck.pptx)
+[![Direct PPTX Download](https://img.shields.io/badge/Download_Deck-6.1_MB_.pptx-FBBF24?style=for-the-badge&logo=microsoftpowerpoint&logoColor=black)](https://pptx.kishor.tech/Kishor_Kumar_Paroi_10000_Dollar_Executive_Deck.pptx)
 [![OpenXML Compliance](https://img.shields.io/badge/Compliance-100%25_ECMA--376-10B981?style=for-the-badge&logo=w3c&logoColor=white)](https://pptx.kishor.tech)
 [![Vercel Deployment](https://img.shields.io/badge/Deploy-Vercel_Edge-black?style=for-the-badge&logo=vercel&logoColor=white)](https://pptx.kishor.tech)
 
@@ -28,27 +28,27 @@
 | **👁️ Microsoft PowerPoint Online** | **[Open in Office Online](https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fpptx.kishor.tech%2FKishor_Kumar_Paroi_10000_Dollar_Executive_Deck.pptx)** | Zero-download interactive cloud viewer powered by Microsoft Office Online. |
 | **📄 Google Slides / Docs Viewer** | **[Open in Google Docs](https://docs.google.com/viewer?url=https%3A%2F%2Fpptx.kishor.tech%2FKishor_Kumar_Paroi_10000_Dollar_Executive_Deck.pptx)** | Seamless browser inspection with zero downloads required. |
 | **🎬 4K Cinematic Video Reel** | **[Watch on YouTube (4K 60FPS)](https://www.youtube.com/watch?v=mqX-2FW3o0Q)** | 90-second high-impact systems architecture walkthrough: multi-agent mesh, Rust SIMD, and vLLM. |
-| **⬇️ Direct Local PPTX** | **[Download .pptx (5.3 MB)](https://pptx.kishor.tech/Kishor_Kumar_Paroi_10000_Dollar_Executive_Deck.pptx)** | Full widescreen 16:9 presentation file for boardroom offline presentations and technical diligence. |
+| **⬇️ Direct Local PPTX** | **[Download .pptx (6.1 MB)](https://pptx.kishor.tech/Kishor_Kumar_Paroi_10000_Dollar_Executive_Deck.pptx)** | Full widescreen 16:9 presentation file (29 slides) for boardroom offline presentations and technical diligence. |
 
 ---
 
 ## 🎯 Executive Overview
 
 Authored by **Kishor Kumar Paroi** (Principal AI Systems Architect & Founder @ KoomAI), this presentation delivers a bespoke, boardroom-ready architectural breakdown covering:
-* **Production AI Systems & Latency Rigor**: Sub-35ms Hybrid RAG, 50x Rust SIMD vector pre-filtering, and 99.4% autonomous agent precision.
-* **All 15 Flagship System Blueprints**: High-resolution topology diagrams, detailed 4-pillar technical bullet points, and verified ROI metrics across every project.
-* **Dual-Track Career Trajectory**: Experience at phi0.ai ($1.4M contracts won), Samsung AI Core, kepi.ai, and academic pedigree (RUET CSE Rank 483rd nationwide, ICPC contestant).
+* **Production AI Systems & Latency Rigor**: Sub-500ms Omnichannel Voice AI (`ai-voice-receptionist.kishor.tech`), Sub-35ms Hybrid RAG, 50x Rust SIMD vector pre-filtering, and 99.4% autonomous agent precision.
+* **All 20 Flagship System Blueprints**: High-resolution topology diagrams, detailed 4-pillar technical bullet points, and verified ROI metrics across every project (including Omnichannel AI, CUDA FlashAttention-2/3, Distributed 4D LLM Training, AutoCut-AI, and Nimbus-AI).
+* **Dual-Track Career Trajectory**: Omnichannel AI Solutions (`ai-voice-receptionist.kishor.tech`), phi0.ai ($1.4M contracts won), Samsung AI Core, kepi.ai, and academic pedigree (RUET CSE Rank 483rd nationwide, ICPC contestant).
 * **Enterprise Cloud & Economics**: Medallion Lakehouses (Snowflake, PySpark Delta Lake, Feast <5ms Redis), vLLM Multi-LoRA dynamic multiplexing (-68% GPU spend), and ArgoCD GitOps.
 
 ---
 
-## 📐 24-Slide Architectural Deck Structure
+## 📐 29-Slide Architectural Deck Structure
 
 | Slide | Category | Title & Core Highlights |
 | :---: | :--- | :--- |
 | **01** | **Hero Cover** | **Apple Keynote Minimalist Studio Cover** &bull; Full-bleed studio lighting with celestial cyan glow. |
 | **02** | **Executive Hero** | **Kishor Kumar Paroi — Identity & Verified Production Rigor** &bull; $1.4M ARR, <35ms RAG, 50x Rust, 99.4% precision. |
-| **03** | **Resume & Pedigree** | **Executive Resume & Dual-Track Trajectory** &bull; phi0.ai, Samsung AI Core, kepi.ai, RUET CSE, and competitive DSA honors. |
+| **03** | **Resume & Pedigree** | **Executive Resume & Dual-Track Trajectory** &bull; Omnichannel AI Solutions, phi0.ai, Samsung AI Core, kepi.ai, RUET CSE, and competitive DSA honors. |
 | **04** | **Systems Thesis** | **The 4 Production AI Pillars** &bull; Sub-35ms Retrieval, Multi-LoRA vLLM, Zero-Trust NeMo Defense, and Medallion Lakehouses. |
 | **05** | **Telemetry Wall** | **Executive Benchmarks & Cost Cuts** &bull; Native vector progress bars (12x faster P95, 88% cheaper tokens, 90x faster feature lookup). |
 | **06** | **Flagship 01** | **Zomato AI Lakehouse & Dispute Platform** &bull; 35M+ orders, PySpark Delta Lake, Snowflake, Feast <5ms Redis, dHash CV fraud arbitration. |
@@ -66,10 +66,15 @@ Authored by **Kishor Kumar Paroi** (Principal AI Systems Architect & Founder @ K
 | **18** | **Flagship 13** | **3D Cyber Hacker Cockpit & Interactive WebGL** &bull; Three.js, custom GLSL bloom shaders, real-time WebSocket cyber threat telemetry at 60 FPS. |
 | **19** | **Flagship 14** | **MacOS Sequoia Interactive Desktop Web OS** &bull; Next.js 15, Framer Motion window physics, Zustand store, interactive Terminal, Web Audio API. |
 | **20** | **Flagship 15** | **Interactive 3D Space Station Digital Twin** &bull; WebGL space station twin, orbital physics simulation, sensor fusion telemetry HUD, mobile 60 FPS. |
-| **21** | **Advantage** | **Value Differentiation Matrix** &bull; Direct side-by-side comparison: Typical Senior Engineers vs Kishor's full-stack systems engineering rigor. |
-| **22** | **Engagement** | **Target Roles & Collaboration Models** &bull; Principal AI Systems Architect, FDE, Executive Advisory, High-Impact 90-Day Sprints. |
-| **23** | **Roadmap** | **90-Day Strategic Impact Playbook** &bull; Phase 1: Days 1–30 (Audit & Quick-Win ROI); Phase 2: Days 31–60 (Mesh & Lakehouse); Phase 3: Days 61–90 (GitOps Scale). |
-| **24** | **Closing Outro** | **Vantage Retro Synthwave Anime Crest** &bull; Distinct closing slide with 80s anime aesthetic, holographic cyberdeck, and direct contact gateways. |
+| **21** | **Flagship 16 (Live)** | **Omnichannel AI Voice & Chat Receptionist (`ai-voice-receptionist.kishor.tech`)** &bull; Sub-500ms Vapi Squad (Marcus↔Sophia), Deepgram Nova-2 (<180ms), FastAPI (<40ms), Cartesia Sonic-3.5 (<110ms), PSTN `+1 (667) 307-0119`, WebRTC, 8+ social webhooks, Clerk + Neon PG, Google Calendar v3, Twilio 24h/1h cron & n8n/Slack. |
+| **22** | **Flagship 17** | **FlashAttention-2, 3 & Flash-Decoding CUDA Kernel** &bull; Tiled Online Softmax, Split-KV Flash-Decoding (8x speedup), PagedAttention (<4% KV waste), FP8 scaled attention & 39 test suites. |
+| **23** | **Flagship 18** | **Distributed LLM Training (4D Parallelism & Ring All-Reduce)** &bull; Megatron TP, Interleaved 1F1B PP, ZeRO-3 FSDP, Ring Attention (1M+ tokens), 49.07% MFU on 64x H100s & async DCP. |
+| **24** | **Flagship 19** | **AutoCut-AI: Autonomous Multi-Modal Video Editor** &bull; OpenAI Whisper diarization, viral hook detection, FFmpeg NVENC word captions, face tracking, <45s 9:16 reels (4.2x lift). |
+| **25** | **Flagship 20** | **Nimbus-AI Suite: 5-Agent Live Voice Ecosystem (`nimbus.kishor.tech`)** &bull; Sub-400ms LiveKit WebRTC, FastAPI, GPT-4o/Whisper, ElevenLabs Turbo v2.5, 60fps waveform, RAG vs RAG-less & 5 live agents (`sales`, `meeting`, `research`, `scheduling`, `desktop.kishor.tech`). |
+| **26** | **Advantage** | **Value Differentiation Matrix** &bull; Direct side-by-side comparison: Typical Senior Engineers vs Kishor's full-stack systems engineering rigor. |
+| **27** | **Engagement** | **Target Roles & Collaboration Models** &bull; Principal AI Systems Architect, FDE, Executive Advisory, High-Impact 90-Day Sprints. |
+| **28** | **Roadmap** | **90-Day Strategic Impact Playbook** &bull; Phase 1: Days 1–30 (Audit & Quick-Win ROI); Phase 2: Days 31–60 (Mesh & Lakehouse); Phase 3: Days 61–90 (GitOps Scale). |
+| **29** | **Closing Outro** | **Vantage Retro Synthwave Anime Crest** &bull; Distinct closing slide with 80s anime aesthetic, holographic cyberdeck, and direct contact gateways. |
 
 ---
 
@@ -78,22 +83,20 @@ Authored by **Kishor Kumar Paroi** (Principal AI Systems Architect & Founder @ K
 The deck is deterministically generated via Python without external GUI dependencies:
 
 ```bash
-# 1. Activate dedicated Python environment with python-pptx and Pillow
-source /Users/kishorkumarparoi/Desktop/AI_Sequrity/8hr-MARATHON/.venv/bin/activate
+# 1. Run master generator (requires python-pptx and Pillow)
+python3 generate_master_deck.py
 
-# 2. Run master generator
-python generate_master_deck.py
-
-# 3. Output files generated:
-#  - Kishor_Kumar_Paroi_10000_Dollar_Executive_Deck.pptx (5.32 MB)
-#  - pitch_deck.pptx (5.32 MB)
-#  - deck.pptx (5.32 MB)
+# 2. Output files generated (6.1 MB each, 29 widescreen slides):
+#  - Kishor_Kumar_Paroi_10000_Dollar_Executive_Deck.pptx
+#  - pitch_deck.pptx
+#  - deck.pptx
 ```
 
 ---
 
 ## 🌐 Ecosystem & Author Information
 
+* **Live Omnichannel Voice SaaS:** [ai-voice-receptionist.kishor.tech](https://ai-voice-receptionist.kishor.tech)
 * **Portfolio:** [kishor.tech](https://kishor.tech)
 * **KoomAI:** [koom.kishor.tech](https://koom.kishor.tech)
 * **macOS Portfolio:** [macos.kishor.tech](https://macos.kishor.tech)

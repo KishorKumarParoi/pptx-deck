@@ -87,7 +87,7 @@ prs = Presentation()
 prs.slide_width  = Inches(13.333)
 prs.slide_height = Inches(7.5)
 blank_layout     = prs.slide_layouts[6]
-TOTAL_SLIDES     = 24
+TOTAL_SLIDES     = 29
 
 def add_slide():
     slide = prs.slides.add_slide(blank_layout)
@@ -242,11 +242,15 @@ r_spec.font.size = Pt(9.5)
 r_spec.font.color.rgb = MUTED_WHITE
 
 # Ecosystem Links Pill Bar at bottom of left column
-links_y = 5.95
-add_pill(s2, 1.25, links_y, "koom.kishor.tech", BORDER_CYAN, BG_CARD_LIGHT, BORDER_CYAN, font_sz=8.0)
-add_pill(s2, 2.95, links_y, "kishor.tech", WHITE, BG_CARD_LIGHT, DARK_GRAY, font_sz=8.0)
-add_pill(s2, 4.15, links_y, "macos.kishor.tech", BORDER_GOLD, BG_CARD_LIGHT, BORDER_GOLD, font_sz=8.0)
-add_pill(s2, 5.85, links_y, "15m Zoom Link", BORDER_EMERALD, BG_CARD_LIGHT, BORDER_EMERALD, font_sz=8.0)
+links_y = 5.90
+_, w1 = add_pill(s2, 1.25, links_y, "ai-voice-receptionist.kishor.tech", BORDER_ROSE, BG_CARD_LIGHT, BORDER_ROSE, font_sz=7.6)
+_, w2 = add_pill(s2, 1.25 + w1 + 0.12, links_y, "nimbus.kishor.tech", BORDER_EMERALD, BG_CARD_LIGHT, BORDER_EMERALD, font_sz=7.6)
+add_pill(s2, 1.25 + w1 + 0.12 + w2 + 0.12, links_y, "kishor.tech", WHITE, BG_CARD_LIGHT, DARK_GRAY, font_sz=7.6)
+links_y2 = 6.26
+_, w3 = add_pill(s2, 1.25, links_y2, "koom.kishor.tech", BORDER_CYAN, BG_CARD_LIGHT, BORDER_CYAN, font_sz=7.6)
+_, w4 = add_pill(s2, 1.25 + w3 + 0.12, links_y2, "macos.kishor.tech", BORDER_GOLD, BG_CARD_LIGHT, BORDER_GOLD, font_sz=7.6)
+_, w5 = add_pill(s2, 1.25 + w3 + 0.12 + w4 + 0.12, links_y2, "pptx.kishor.tech", BORDER_VIOLET, BG_CARD_LIGHT, BORDER_VIOLET, font_sz=7.6)
+add_pill(s2, 1.25 + w3 + 0.12 + w4 + 0.12 + w5 + 0.12, links_y2, "15m Zoom", BORDER_EMERALD, BG_CARD_LIGHT, BORDER_EMERALD, font_sz=7.6)
 
 # Right Column: 4 High-Status KPI Metric Cards (2x2 Grid)
 metrics_s2 = [
@@ -318,51 +322,54 @@ r_et.font.bold = True
 r_et.font.color.rgb = BORDER_CYAN
 
 experiences = [
+    ("Omnichannel AI Solutions", "Sept 2026 – Present", "Lead Conversational Voice AI Architect · ai-voice-receptionist.kishor.tech", [
+        "Launched live 6-vertical Vapi Squad concierge (Deepgram Nova-2 <180ms, FastAPI <40ms, Cartesia Sonic-3.5 <110ms) <500ms E2E.",
+        "Built Clerk + Neon PostgreSQL + Google Calendar v3 OAuth2 + Twilio 24h/1h cron + 8-channel webhooks & n8n/Slack escalation."
+    ]),
     ("phi0.ai", "July 2026 – Oct 2026", "Forward Deployed AI Engineer (Remote, Europe)", [
         "Orchestrated 5 autonomous LangGraph agents with 99.4% task completion, accelerating onboarding 4x.",
         "Devised sub-35ms Hybrid RAG (HNSW, BM25, FlashRank ONNX) saving $18K/mo; secured $1.4M client contracts."
     ]),
     ("Samsung AI Core / Care Health", "March 2026 – June 2026", "Data Engineering & AI Systems Intern", [
-        "AWS PySpark/EMR batch & streaming pipelines; slashed operational compute by $4.2K/run (34% savings).",
-        "Accelerated 8B/70B LLM inference on H100 with FlashAttention-2 (3.8x throughput, -54% P99 latency).",
+        "AWS PySpark/EMR pipelines (-$4.2K/run); accelerated 8B/70B LLM H100 inference with FlashAttention-2 (3.8x throughput).",
         "Real-time Kinesis fraud detection pipeline eradicated false positives by 52%, preserving $380K/yr."
     ]),
     ("kepi.ai", "Jan 2022 – Sept 2025", "Senior Full Stack Engineer (3 yrs 9 mos, Remote)", [
         "Led zero-downtime microservices migration to AWS Kubernetes; scaled throughput by 300% at 99.99% uptime."
     ]),
-    ("Founder @ KoomAI", "Jan 2025 – Dec 2025", "Asynchronous Video Intelligence Platform", [
+    ("Founder @ KoomAI", "Jan 2025 – Dec 2025", "Asynchronous Video Intelligence Platform ($24K MRR)", [
         "Built WebRTC engine, desktop app, extension & 20-agent LangGraph mesh; scaled to $24K MRR."
     ])
 ]
 
 for company, period, role, bullets in experiences:
     p_c = tf_exp.add_paragraph()
-    p_c.space_before = Pt(5)
+    p_c.space_before = Pt(3.5)
     r_c1 = p_c.add_run()
     r_c1.text = f"{company} "
-    r_c1.font.size = Pt(10.5)
+    r_c1.font.size = Pt(9.8)
     r_c1.font.bold = True
     r_c1.font.color.rgb = WHITE
     
     r_c2 = p_c.add_run()
     r_c2.text = f"({period})"
-    r_c2.font.size = Pt(8.5)
+    r_c2.font.size = Pt(8.0)
     r_c2.font.color.rgb = BORDER_GOLD
     
     p_r = tf_exp.add_paragraph()
-    p_r.space_before = Pt(1)
+    p_r.space_before = Pt(0.5)
     r_r = p_r.add_run()
     r_r.text = role
-    r_r.font.size = Pt(9.0)
+    r_r.font.size = Pt(8.5)
     r_r.font.bold = True
     r_r.font.color.rgb = BORDER_CYAN
     
     for b in bullets:
         p_b = tf_exp.add_paragraph()
-        p_b.space_before = Pt(2)
+        p_b.space_before = Pt(1.2)
         r_b = p_b.add_run()
         r_b.text = f"• {b}"
-        r_b.font.size = Pt(8.5)
+        r_b.font.size = Pt(7.9)
         r_b.font.color.rgb = MUTED_GRAY
 
 # Right Card: Academic Pedigree & Technical Arsenal (Width 5.3")
@@ -390,63 +397,64 @@ edus = [
 
 for school, period, degree, honors in edus:
     p_s = tf_edu.add_paragraph()
-    p_s.space_before = Pt(5)
+    p_s.space_before = Pt(3.5)
     r_s = p_s.add_run()
     r_s.text = f"{school} "
-    r_s.font.size = Pt(10.0)
+    r_s.font.size = Pt(9.2)
     r_s.font.bold = True
     r_s.font.color.rgb = WHITE
     
     r_sp = p_s.add_run()
     r_sp.text = f"({period})"
-    r_sp.font.size = Pt(8.5)
+    r_sp.font.size = Pt(8.0)
     r_sp.font.color.rgb = BORDER_CYAN
     
     p_d = tf_edu.add_paragraph()
-    p_d.space_before = Pt(1)
+    p_d.space_before = Pt(0.5)
     r_d = p_d.add_run()
     r_d.text = f"{degree} — {honors}"
-    r_d.font.size = Pt(8.5)
+    r_d.font.size = Pt(8.0)
     r_d.font.color.rgb = MUTED_GRAY
 
 # Contest Honors
 p_c_head = tf_edu.add_paragraph()
-p_c_head.space_before = Pt(7)
+p_c_head.space_before = Pt(5.5)
 r_ch = p_c_head.add_run()
-r_ch.text = "COMPETITIVE PROGRAMMING & HONORS"
-r_ch.font.size = Pt(9.5)
+r_ch.text = "COMPETITIVE PROGRAMMING, HACKATHONS & LEADERSHIP"
+r_ch.font.size = Pt(9.0)
 r_ch.font.bold = True
 r_ch.font.color.rgb = BORDER_EMERALD
 
 p_c_body = tf_edu.add_paragraph()
-p_c_body.space_before = Pt(2)
+p_c_body.space_before = Pt(1.5)
 r_cb = p_c_body.add_run()
 r_cb.text = (
-    "• ICPC Regional Contestant; Solved 1,500+ problems (LeetCode/Codeforces)\n"
-    "• Mentored 100+ university engineers; Conducted in-person AI Agents masterclass"
+    "• Codeforces Div-2 Rank 232 (Blue), 5★ CodeChef, 17th IUPC, Meta Hacker Cup R3, 2000+ DSA\n"
+    "• Champion: Technobeast AI Agents Hackathon | 7th: AI Security Hackathon (97.2%, <30ms)\n"
+    "• Mentored 100+ engineers; Conducted in-person LangGraph AI Agents masterclass"
 )
-r_cb.font.size = Pt(8.5)
+r_cb.font.size = Pt(7.9)
 r_cb.font.color.rgb = MUTED_GRAY
 
 # Technical Arsenal
 p_s_head = tf_edu.add_paragraph()
-p_s_head.space_before = Pt(7)
+p_s_head.space_before = Pt(5.5)
 r_sh = p_s_head.add_run()
 r_sh.text = "PRODUCTION SKILL ARSENAL"
-r_sh.font.size = Pt(9.5)
+r_sh.font.size = Pt(9.0)
 r_sh.font.bold = True
 r_sh.font.color.rgb = BORDER_VIOLET
 
 p_s_body = tf_edu.add_paragraph()
-p_s_body.space_before = Pt(2)
+p_s_body.space_before = Pt(1.5)
 r_sb = p_s_body.add_run()
 r_sb.text = (
-    "• Languages: Python, Rust (SIMD), Go 1.22, C/C++, TypeScript, SQL, Bash\n"
-    "• AI/GenAI: PyTorch, vLLM, LangGraph, NeMo Guardrails, FlashRank ONNX, PEFT\n"
-    "• Data Infra: Snowflake, PySpark Delta Lake, dbt Core, Feast, Kafka, Airflow\n"
-    "• Cloud/DevOps: AWS, GCP, Azure, Kubernetes, ArgoCD GitOps, Terraform IaC"
+    "• Languages: Python, Rust (Actix/SIMD), Go (Gin), C/C++, TypeScript, Java, Next.js 16, FastAPI\n"
+    "• AI/Voice/Eval: PyTorch, vLLM, Vapi, Deepgram Nova-2, Cartesia Sonic-3.5, LangGraph, LangFuse, DeepEval\n"
+    "• Data Infra: Snowflake, Databricks, PySpark Delta Lake, dbt Core, Feast, Kafka, Airflow, Qdrant\n"
+    "• Cloud/Full-Stack: AWS, GCP, Azure, K8s, ArgoCD, Terraform, NeMo, PyRIT, Clerk, n8n, Twilio, Neon PG"
 )
-r_sb.font.size = Pt(8.5)
+r_sb.font.size = Pt(7.8)
 r_sb.font.color.rgb = MUTED_WHITE
 
 # ═════════════════════════════════════════════════════════════════════════════
@@ -606,7 +614,7 @@ for b_idx, b in enumerate(benchmarks):
 # ═════════════════════════════════════════════════════════════════════════════
 # SLIDES 6 TO 20: ALL 15 PROJECTS DETAILED ARCHITECTURES & BULLETED BREAKDOWNS
 # ═════════════════════════════════════════════════════════════════════════════
-print("Preparing All 15 Project Architectures...")
+print("Preparing All 20 Project Architectures...")
 
 PROJECTS = [
     {
@@ -848,6 +856,86 @@ PROJECTS = [
             ("Interactive Exploration:", "First-person and orbit camera controls with collision detection, hotspot annotation markers, and guided inspection tours.")
         ],
         "metrics": [("60 FPS", "Mobile Optimized"), ("Three.js", "LOD Streaming"), ("Sensor", "Telemetry HUD")]
+    },
+    {
+        "id": 16,
+        "category": "FLAGSHIP 16: LIVE VOICE & OMNICHANNEL SAAS",
+        "title": "Omnichannel AI Voice & Chat Receptionist (ai-voice-receptionist.kishor.tech)",
+        "subtitle": "Sub-500ms Vapi Squad Concierge, Multi-Channel Webhooks & Neon PG",
+        "badge": "<500MS E2E · 6 VERTICALS · +1-667-307-0119",
+        "accent": BORDER_ROSE,
+        "img_src": "/Users/kishorkumarparoi/job-project/pptx-deck/opt_img/p16_omnichannel.png",
+        "bullets": [
+            ("Sub-500ms Voice & Vapi Squad:", "Launched live multi-tenant voice receptionist combining Deepgram Nova-2 STT (<180ms), FastAPI tool calling (<40ms), Cartesia Sonic-3.5 TTS (<110ms), Marcus ↔ Sophia transfers, dialect adaptation, WebRTC & PSTN (+1-667-307-0119)."),
+            ("Omnichannel Social & Chat Engine:", "Unified webhook ingestion across Website Chat Widget (/widget.js), WhatsApp Cloud API, FB Messenger, Instagram DMs, Telegram, X, LinkedIn & TikTok with per-tenant 64-dim cosine vector FAQ RAG."),
+            ("Multi-Tenant DB & Calendar Sync:", "Powered by Clerk Auth across 6 business verticals (Salon, Real Estate, Legal, Dental, Auto, Clinic), pooled Neon Serverless PostgreSQL + SQLite fallback, and 2-way Google Calendar API v3 OAuth2 sync."),
+            ("Automated Reminders & n8n Ops:", "Runs Twilio SMS & WhatsApp booking confirmations, daily Vercel Cron (/api/cron/reminders) 24h/1h alerts, n8n Sophia escalations, Slack bot notifications, structured eval rubrics, and pytest pre-push gates.")
+        ],
+        "metrics": [("<500ms", "Voice Turnaround"), ("8+ Channels", "Voice & Social"), ("6 Verticals", "Clerk + Neon DB")]
+    },
+    {
+        "id": 17,
+        "category": "FLAGSHIP 17: BARE-METAL CUDA KERNELS",
+        "title": "FlashAttention-2, 3 & Flash-Decoding Custom CUDA Kernel",
+        "subtitle": "Tiled Online Softmax, Split-KV Decoding, PagedAttention & FP8",
+        "badge": "8X DECODE SPEEDUP · <4% KV WASTE",
+        "accent": BORDER_CYAN,
+        "img_src": "/Users/kishorkumarparoi/job-project/pptx-deck/opt_img/p17_cuda.png",
+        "bullets": [
+            ("FlashAttention-2 & 3 in CUDA C++:", "Eliminated O(N^2) HBM bottleneck via Tiled Online Softmax; implemented Flash-Decoding (Split-KV) restoring 100% SM occupancy during generation (S_q=1) for 8x lower decode latency."),
+            ("PagedAttention Virtual Memory:", "Constructed block-table virtual memory paging for KV cache, slashing memory fragmentation waste from 60-80% down to <4% and tripling concurrent serving batch sizes."),
+            ("Shared Memory & Warp Optimization:", "Implemented padded SRAM strides ([Br][d+4]) eliminating 32-way bank conflicts, __shfl_down_sync warp reductions, tile-pruned sliding window ALiBi, and FP8 (E4M3/E5M2) scaled attention."),
+            ("O(N) Backward Recomputation:", "Engineered exact backward pass via SRAM recomputation from forward log-sum-exp vectors (L_i = m_i + log l_i), verified for numerical equivalence against PyTorch native attention across 39 test suites.")
+        ],
+        "metrics": [("8x", "Decode Speedup"), ("<4%", "KV Fragmentation"), ("39 Suites", "PyTorch Parity")]
+    },
+    {
+        "id": 18,
+        "category": "FLAGSHIP 18: DISTRIBUTED PRE-TRAINING",
+        "title": "Distributed LLM Training Framework (4D Parallelism & Ring All-Reduce)",
+        "subtitle": "Megatron TP, Interleaved 1F1B PP, ZeRO-3 FSDP & Ring Attention",
+        "badge": "49.07% MFU ON 64X H100 · -70% BUBBLE",
+        "accent": BORDER_VIOLET,
+        "img_src": "/Users/kishorkumarparoi/job-project/pptx-deck/opt_img/p18_distributed.png",
+        "bullets": [
+            ("Full 4D Parallelism (TPxPPxDPxSP):", "Handcrafted LLaMA-3 (8B/70B) distributed training engine combining Megatron Tensor Parallelism, Interleaved 1F1B Pipeline Parallelism, ZeRO-3 FSDP, and Ring Attention Context Parallelism."),
+            ("ZeRO-3 & Custom Ring All-Reduce:", "Implemented pre-forward All-Gather and post-backward Reduce-Scatter cutting per-GPU memory to 16·Phi/N_DP, sustaining 49.07% MFU across 64x NVIDIA H100 GPUs."),
+            ("Ring Attention & Interleaved 1F1B:", "Achieved 100% comm-comp overlap via multi-hop online softmax for 1M+ token contexts while Megatron-LM v2 interleaved virtual stages cut pipeline bubble fraction by up to 70%."),
+            ("Distributed Async Checkpointing:", "Built Distributed Asynchronous Checkpointing (DCP) with dynamic topology resharding across mismatched GPU cluster counts, verified across 24 unit test suites.")
+        ],
+        "metrics": [("49.07%", "64x H100 MFU"), ("-70%", "Pipeline Bubble"), ("1M+ Tokens", "Ring Attention")]
+    },
+    {
+        "id": 19,
+        "category": "FLAGSHIP 19: MULTIMODAL VIDEO AI",
+        "title": "AutoCut-AI: Autonomous Multi-Modal Video Editor & Reel Generator",
+        "subtitle": "Whisper Diarization, FFmpeg NVENC Acceleration & Face Tracking",
+        "badge": "<45S RENDER · 8X FASTER · 4.2X RETENTION",
+        "accent": BORDER_GOLD,
+        "img_src": "/Users/kishorkumarparoi/job-project/pptx-deck/opt_img/p19_autocut.png",
+        "bullets": [
+            ("Autonomous Diarization & Hook Engine:", "Engineered multi-modal editing pipeline combining OpenAI Whisper diarization, filler-word removal, silence stripping, and automated viral hook identification."),
+            ("Sub-45s 9:16 Reel Pipeline:", "Produced vertical short-form edits in <45 seconds (8x faster than manual nonlinear workflows) inside a unified Next.js studio backend."),
+            ("GPU NVENC & Face Tracking:", "Accelerated dynamic word-by-word animated captions with FFmpeg GPU NVENC hardware encoding and OpenCV/YOLO active-speaker face-tracking crop framing."),
+            ("Audience Engagement Lift:", "Delivered 4.2x viewer retention lift across 100K+ generated short-form social clips with deterministic audio normalization and chapter rendering.")
+        ],
+        "metrics": [("<45s", "End-to-End Cut"), ("8x", "Edit Speedup"), ("4.2x", "Retention Lift")]
+    },
+    {
+        "id": 20,
+        "category": "FLAGSHIP 20: 5-AGENT LIVE VOICE SUITE",
+        "title": "Nimbus-AI Suite: 5-Agent Live Voice Ecosystem (nimbus.kishor.tech)",
+        "subtitle": "Sales, Meeting, Research, Scheduling & Desktop Agents Built From Scratch",
+        "badge": "5 LIVE AGENTS · SUB-400MS · 60FPS WAVEFORM",
+        "accent": BORDER_EMERALD,
+        "img_src": "/Users/kishorkumarparoi/job-project/pptx-deck/opt_img/p20_nimbus.png",
+        "bullets": [
+            ("Sub-400ms Scratch Voice Core:", "Built unified 5-agent voice platform on LiveKit WebRTC, FastAPI (/api/voice/process), OpenAI GPT-4o / Whisper ASR, and ElevenLabs Turbo v2.5 TTS at <400ms end-to-end roundtrips."),
+            ("Live 60fps Audio & Barge-In:", "Engineered real-time 60fps waveform telemetry, instant barge-in speech interruption, RAG vs. RAG-less retrieval toggle, and latency waterfall observability."),
+            ("Sales, Scheduling & Meeting Agents:", "Deployed live Vercel agents at sales.kishor.tech (savings/quotes), scheduling.kishor.tech (calendar/conflicts), and meeting.kishor.tech (live scribe/actions)."),
+            ("Research, Desktop & Testing Rigor:", "Launched research.kishor.tech (corpus synthesis/citations) and desktop.kishor.tech (OS control/telemetry), each backed by independent GitHub repos and pytest suites.")
+        ],
+        "metrics": [("5 Live Sites", "*.kishor.tech"), ("<400ms", "Voice Roundtrip"), ("60fps", "Audio Waveform")]
     }
 ]
 
@@ -979,9 +1067,9 @@ for p in PROJECTS:
 # ═════════════════════════════════════════════════════════════════════════════
 # SLIDE 21: VALUE DIFFERENTIATION MATRIX (KISHOR VS TYPICAL SENIOR ENGINEERS)
 # ═════════════════════════════════════════════════════════════════════════════
-print("Building Slide 21: Value Differentiation...")
+print(f"Building Slide {len(PROJECTS)+6}: Value Differentiation...")
 s21 = add_slide()
-add_header(s21, "Value Differentiation: Production Rigor vs Typical Prototypers", "COMPETITIVE ADVANTAGE", slide_num=21)
+add_header(s21, "Value Differentiation: Production Rigor vs Typical Prototypers", "COMPETITIVE ADVANTAGE", slide_num=len(PROJECTS)+6)
 
 diff_dims = [
     ("Systems Rigor & Speed", "Python wrappers with multi-second latency spikes and heavy heap footprints.", "Polyglot systems (Rust SIMD, Go 1.22, C++) with 50x compute acceleration and <1µs hot paths.", BORDER_CYAN),
@@ -1052,9 +1140,9 @@ for idx, (dim, typical, kishor, col) in enumerate(diff_dims):
 # ═════════════════════════════════════════════════════════════════════════════
 # SLIDE 22: TARGET ROLES & ENGAGEMENT MODEL (COLLABORATION)
 # ═════════════════════════════════════════════════════════════════════════════
-print("Building Slide 22: Target Roles & Engagement...")
+print(f"Building Slide {len(PROJECTS)+7}: Target Roles & Engagement...")
 s22 = add_slide()
-add_header(s22, "Target Roles & Engagement Model: How We Can Partner", "COLLABORATION MODES", slide_num=22)
+add_header(s22, "Target Roles & Engagement Model: How We Can Partner", "COLLABORATION MODES", slide_num=len(PROJECTS)+7)
 
 roles_data = [
     ("Target Roles", "High-Impact Architectural & Leadership Roles", BORDER_CYAN, [
@@ -1072,10 +1160,10 @@ roles_data = [
         "Enterprise Multi-Agent Mesh & Lakehouse Overhauls"
     ]),
     ("Direct Ecosystem & Booking", "Get In Touch & Explore Live Artifacts", BORDER_EMERALD, [
-        "koom.kishor.tech (Live SaaS)",
+        "ai-voice-receptionist.kishor.tech (Live SaaS)",
         "kishor.tech (Engineering Portfolio)",
-        "macos.kishor.tech (Interactive WebOS)",
-        "linkedin.com/in/kishor-kumar-paroi",
+        "pptx.kishor.tech (Executive Deck)",
+        "koom.kishor.tech (Video AI) · macos.kishor.tech",
         "kishor.ruet.cse@gmail.com"
     ])
 ]
@@ -1123,9 +1211,9 @@ for idx, (title, sub, col, items) in enumerate(roles_data):
 # ═════════════════════════════════════════════════════════════════════════════
 # SLIDE 23: 90-DAY STRATEGIC IMPACT PLAYBOOK (ROADMAP)
 # ═════════════════════════════════════════════════════════════════════════════
-print("Building Slide 23: 90-Day Execution Roadmap...")
+print(f"Building Slide {len(PROJECTS)+8}: 90-Day Execution Roadmap...")
 s23 = add_slide()
-add_header(s23, "90-Day Execution Roadmap: From Day 0 Audit to Production Scale", "ACTIONABLE PLAYBOOK", slide_num=23)
+add_header(s23, "90-Day Execution Roadmap: From Day 0 Audit to Production Scale", "ACTIONABLE PLAYBOOK", slide_num=len(PROJECTS)+8)
 
 phases = [
     ("DAYS 1 – 30", "Architecture Audit & Quick-Win ROI", BORDER_CYAN, [
@@ -1190,7 +1278,7 @@ for idx, (p_tag, p_title, col, steps) in enumerate(phases):
 # ═════════════════════════════════════════════════════════════════════════════
 # SLIDE 24: CINEMATIC VISUAL OUTRO (VANTAGE RETRO SYNTHWAVE CREST FULL-BLEED)
 # ═════════════════════════════════════════════════════════════════════════════
-print("Building Slide 24: Outro...")
+print(f"Building Slide {TOTAL_SLIDES}: Outro...")
 s24 = add_slide()
 img_outro_path = os.path.join(DECK_DIR, "outro.png")
 if os.path.exists(img_outro_path):
@@ -1210,4 +1298,4 @@ for out_path in out_files:
     sz = os.path.getsize(out_path) / (1024 * 1024)
     print(f"Saved: {out_path} ({sz:.2f} MB)")
 
-print("\nSUCCESS: All 24 slides generated with 100% ECMA-376 OpenXML compliance!")
+print(f"\nSUCCESS: All {TOTAL_SLIDES} slides generated with 100% ECMA-376 OpenXML compliance!")
