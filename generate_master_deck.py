@@ -57,7 +57,7 @@ def get_optimized_image(src_path, key, max_dim=1500, quality=88):
         print(f"WARNING: Image not found: {src_path}")
         return None
     out_path = os.path.join(OPT_IMG_DIR, f"{key}.jpg")
-    if os.path.exists(out_path) and os.path.getsize(out_path) > 1000:
+    if os.path.exists(out_path) and os.path.getsize(out_path) > 1000 and os.path.getmtime(out_path) >= os.path.getmtime(src_path):
         return out_path
     try:
         im = Image.open(src_path)
